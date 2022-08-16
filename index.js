@@ -4,7 +4,7 @@ const cors = require('cors');
 const ObjectId = require('mongodb').ObjectId;
 require('dotenv').config();
 const app = express()
-// const stripe = require("stripe")(process.env.STRIPE_SECRET);
+
 const port = process.env.PORT || 5000;
 
 // middleware 
@@ -61,9 +61,6 @@ app.post('/records', async(req, res) => {
     res.json(result);
           
   })
-
-
-
 
     } 
     finally {
